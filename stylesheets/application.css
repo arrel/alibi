@@ -1,0 +1,43 @@
+body { background: url('../images/background.gif') repeat; }
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #ed1b24; }
+a:hover { color: #fff; background-color: #ed1b24; }
+
+/****************************************/
+/* HEADER
+/****************************************/
+#header { height: 229px; background: #030302; }
+#header .wrapper { width: 939px; height: 100%; background-image: url('../images/header/header.jpg'); margin: auto; padding: 0 30px; }
+#header .logo { display: inline-block; }
+#header .logo a { display: inline-block; text-indent: -9999px; width: 153px; height: 145px; margin-left: -30px; background: transparent url('../images/header/logo.png') no-repeat 0 0; }
+#navigation { display: inline-block; margin-left: 100px; }
+#navigation a { display: inline-block; text-indent: -9999px; height: 41px; margin-right: 35px; background-color: transparent; background-position: 0 0; }
+#navigation a.about { width: 137px; background-image: url('../images/header/nav_about.png'); }
+#navigation a.subscribe { width: 118px; background-image: url('../images/header/nav_subscribe.png'); }
+#navigation a.contact { width: 101px; background-image: url('../images/header/nav_contact.png'); }
+
+/****************************************/
+/* MAIN
+/****************************************/
+#main { width: 940px; margin: 0 auto; padding-top: 80px; background: url('../images/soiree.png') no-repeat 275px 18px; }
+#main h4 { font-size: 18px; line-height: 1.6em; font-family: Georgia; font-weight: normal; text-shadow: 1px 1px 1px #fff; }
+#main h4 span.lead { float: left; font-size: 72px; line-height: 62px; margin: -6px 3px 0 8px; font-style: oblique; }
+
+/****************************************/
+/* SIDEBAR
+/****************************************/
+#sidebar { float: right; width: 300px; padding-left: 20px; }
+
+/****************************************/
+/* FEED
+/****************************************/
+#feed {  }
+
+/****************************************/
+/* FOOTER
+/****************************************/
+#footer { width: 100%; height: 55px; margin-top: 80px; background: url('../images/footer/background.gif'); }
+#footer .wrapper { position: relative; width: 960px; margin: auto; vertical-align: middle; }
+#footer p { font-family: Georgia; font-size: 12px; line-height: 55px; padding-left: 117px; color: #fff; text-shadow: 1px 1px 1px #000; }
+#footer p.banner { width: 155px; height: 52px; position: absolute; top: -22px; left: -14px; padding: 0; text-indent: -9999px; background-image: url('../images/footer/banner.png'); }
