@@ -7,11 +7,11 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /****************************************/
 /* HEADER
 /****************************************/
-#header { height: 229px; background: #030302; }
-#header .wrapper { width: 939px; height: 100%; background-image: url('../images/header/header.jpg'); margin: auto; padding: 0 30px; }
+#header { height: 229px; background: #030302; background-image: url('../images/header/header.jpg'); background-position: center top; }
+#header .wrapper { width: 939px; height: 100%; margin: auto; padding: 0 30px; }
 #header .logo { display: inline-block; }
 #header .logo a { display: inline-block; text-indent: -9999px; width: 153px; height: 145px; margin-left: -30px; background: transparent url('../images/header/logo.png') no-repeat 0 0; }
-#navigation { display: inline-block; margin-left: 100px; }
+#navigation { display: inline-block; margin-left: 110px; }
 #navigation a { display: inline-block; text-indent: -9999px; height: 41px; margin-right: 35px; background-color: transparent; background-position: 0 0; }
 #navigation a.about { width: 137px; background-image: url('../images/header/nav_about.png'); }
 #navigation a.subscribe { width: 118px; background-image: url('../images/header/nav_subscribe.png'); }
@@ -20,9 +20,9 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /****************************************/
 /* MAIN
 /****************************************/
-#main { width: 940px; margin: 0 auto; padding-top: 78px; background: url('../images/soiree.png') no-repeat 275px 18px; }
+#main { width: 940px; margin: 0 auto; padding-top: 78px; background: url('../images/soiree.png') no-repeat 277px 16px; }
 #main h4 { font-size: 18px; line-height: 1.6em; text-shadow: 1px 1px 1px #fff; margin-top: -6px; }
-#main h4 span.lead { float: left; font-size: 72px; line-height: 62px; margin: -12px 3px 0 8px; font-style: oblique; }
+#main h4 span.lead { display: block; float: left; font-size: 72px; line-height: 62px; margin: -12px 3px 0 8px; font-style: oblique; }
 
 /****************************************/
 /* SIDEBAR
@@ -49,21 +49,21 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /****************************************/
 /* FEED
 /****************************************/
-#feed { position: relative; margin-top: 55px; width: 590px; padding: 26px 15px; background-color: #fff; background-repeat: repeat-x; background-image: url('../images/feed_header.png'); color: #231f20; }
+#feed { position: relative; margin-top: 55px; width: 605px; padding: 26px 0 26px 15px; background-color: #fff; background-repeat: repeat-x; background-image: url('../images/feed_header.png'); color: #231f20; }
 #feed h2.headline_alibinews { text-indent: -9999px; background: url('../images/headline_alibinews.png') no-repeat; width: 100%; height: 41px; margin-bottom: 20px; }
 #feed .item { padding: 25px 65px 10px 65px; }
 #feed .item h3.title { font-size: 24px; line-height: 1.5em; }
 #feed .item h3 a, #feed .item h3 a:hover { color: #444; background: transparent; }
 #feed .item h3 a:hover { color: #ed1b24; }
-#feed .item h5.timestamp { font-size: 15px; color: #555; font-style: oblique; margin-bottom: 25px; }
-#feed .item p { font-size: 14px; line-height: 1.5em; margin-bottom: 1em; }
-#feed .icon { clear: both; width: 100%; height: 120px; background: url('../images/icon_guitar.png') no-repeat 50% 90%; }
-#feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; bottom: -27px; }
+#feed .item h5.timestamp { font-size: 15px; color: #555; font-style: oblique; margin-bottom: 15px; }
+#feed .item p { font-size: 14px; line-height: 1.8em; margin-bottom: 1em; }
+#feed .icon { clear: both; width: 100%; height: 50px; background: url('../images/icon_guitar.png') no-repeat 50% 90%; margin-top: 80px; }
+#feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; left: 0px; bottom: -27px; }
 
 /****************************************/
 /* FOOTER
 /****************************************/
-#footer { width: 100%; height: 55px; margin-top: 80px; background: url('../images/footer/background.gif'); }
+#footer { width: 100%; height: 55px; margin-top: 110px; background: url('../images/footer/background.gif'); }
 #footer .wrapper { position: relative; width: 960px; margin: auto; vertical-align: middle; }
 #footer p { font-size: 12px; line-height: 52px; padding: 3px 0 0 127px; color: #fff; text-shadow: 1px 1px 1px #000; }
 #footer em { font-style: oblique;}
