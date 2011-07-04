@@ -23,11 +23,14 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /* MAIN
 /****************************************/
 #main { width: 940px; margin: 0 auto; padding-top: 78px; background: url('../images/soiree.png') no-repeat 277px 16px; }
-#main h4 { font-size: 18px; line-height: 1.6em; text-shadow: 1px 1px 1px #fff; margin-top: -6px; }
+#main h4 { font-size: 18px; line-height: 1.6em; text-shadow: 1px 1px 1px #fff; margin: -6px 0 25px 0; }
 #main h4 span.lead { display: block; float: left; font-size: 72px; line-height: 62px; margin: -12px 3px 0 8px; font-style: oblique; }
 .page #main { background-image: none; padding-top: 64px; }
 .page #main h1 { height: 69px; text-indent: -9999px; background-repeat: no-repeat; margin-bottom: 40px; }
 .about #main h1 { background-image: url('../images/title_aboutalibi.png'); }
+.subscribe #main h1 { background-image: url('../images/title_subscribe.png'); }
+.contact #main h1 { background-image: url('../images/title_contact.png'); }
+#main .icon { display: block; position: relative; margin: 60px auto; padding-right: 80px; }
 
 
 /****************************************/
@@ -35,7 +38,7 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /****************************************/
 #sidebar { float: right; width: 300px; padding-left: 20px; text-shadow: 1px 1px 1px #FFF; line-height: 1.5em; }
 #sidebar a:hover { text-shadow: none; }
-#sidebar hr { margin: 20px 2px; border-color: #c4c4c4; }
+#sidebar hr { margin: 25px 2px; border-color: #c4c4c4; }
 #sidebar p { font-size: 14px; text-shadow: 1px 1px 1px #FFF; line-height: 1.5em; margin-bottom: 8px; }
 #sidebar p.info { font-size: 13px; font-style: oblique; color: #545353; margin-top: 15px; line-height: 1.7em; }
 #sidebar h3 { text-indent: -9999px; background-repeat: no-repeat; width: 100%; height: 30px; margin-bottom: 8px; }
@@ -66,8 +69,8 @@ a:hover { color: #fff; background-color: #ed1b24; }
 #feed h5.timestamp { font-size: 15px; color: #555; font-style: oblique; margin-bottom: 15px; }
 #feed p { font-size: 14px; line-height: 1.8em; margin-bottom: 1.5em; }
 .page #feed p { font-size: 15px; line-height: 1.6em; }
-#feed .icon { clear: both; width: 100%; height: 50px; background: url('../images/icon_guitar.png') no-repeat 50% 90%; margin-top: 80px; }
-.page #feed .icon { margin-top: 30px; background-image: url('../images/icon_inkwell.png'); }
+#feed .icon { clear: both; margin: 80px auto 0 auto; padding: 0; }
+.page #feed .icon { margin-top: 0; }
 #feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; left: 0px; bottom: -27px; }
 #feed hr.full { position: relative; left: -15px; width: 620px; height: 3px; background-image: url('../images/feed_header.png'); border: none; margin-bottom: 35px; }
 
