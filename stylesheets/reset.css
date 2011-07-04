@@ -79,6 +79,7 @@ button {  width: auto; overflow: visible; }
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+.clear { clear: both; }
 
 
 @media all and (orientation:portrait) {
