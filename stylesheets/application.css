@@ -7,11 +7,13 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /****************************************/
 /* HEADER
 /****************************************/
-#header { height: 229px; background: #030302; background-image: url('../images/header/header.jpg'); background-position: center top; }
+#header { height: 229px; background: #030302; background-image: url('../images/header/background.jpg'); background-position: center top; }
 #header .wrapper { width: 939px; height: 100%; margin: auto; padding: 0 30px; }
 #header .logo { display: inline-block; }
-#header .logo a { display: inline-block; text-indent: -9999px; width: 153px; height: 145px; margin-left: -30px; background: transparent url('../images/header/logo.png') no-repeat 0 0; }
-#navigation { display: inline-block; margin-left: 110px; }
+#header .logo a { display: inline-block; text-indent: -9999px; width: 160px; height: 156px; margin-left: -32px; background: transparent url('../images/header/logo.png') no-repeat 0 0; }
+.page #header { height: 112px; background-image: url('../images/header/background_page.jpg'); }
+
+#navigation { display: inline-block; margin-left: 105px; }
 #navigation a { display: inline-block; text-indent: -9999px; height: 41px; margin-right: 35px; background-color: transparent; background-position: 0 0; }
 #navigation a.about { width: 137px; background-image: url('../images/header/nav_about.png'); }
 #navigation a.subscribe { width: 118px; background-image: url('../images/header/nav_subscribe.png'); }
@@ -23,6 +25,10 @@ a:hover { color: #fff; background-color: #ed1b24; }
 #main { width: 940px; margin: 0 auto; padding-top: 78px; background: url('../images/soiree.png') no-repeat 277px 16px; }
 #main h4 { font-size: 18px; line-height: 1.6em; text-shadow: 1px 1px 1px #fff; margin-top: -6px; }
 #main h4 span.lead { display: block; float: left; font-size: 72px; line-height: 62px; margin: -12px 3px 0 8px; font-style: oblique; }
+.page #main { background-image: none; padding-top: 64px; }
+.page #main h1 { height: 69px; text-indent: -9999px; background-repeat: no-repeat; margin-bottom: 40px; }
+.about #main h1 { background-image: url('../images/title_aboutalibi.png'); }
+
 
 /****************************************/
 /* SIDEBAR
@@ -50,15 +56,20 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /* FEED
 /****************************************/
 #feed { position: relative; margin-top: 55px; width: 605px; padding: 26px 0 26px 15px; background-color: #fff; background-repeat: repeat-x; background-image: url('../images/feed_header.png'); color: #231f20; }
+.page #feed { color: #2d2d2d; }
 #feed h2.headline_alibinews { text-indent: -9999px; background: url('../images/headline_alibinews.png') no-repeat; width: 100%; height: 41px; margin-bottom: 20px; }
 #feed .item { padding: 25px 65px 10px 65px; }
-#feed .item h3.title { font-size: 24px; line-height: 1.5em; }
-#feed .item h3 a, #feed .item h3 a:hover { color: #444; background: transparent; }
-#feed .item h3 a:hover { color: #ed1b24; }
-#feed .item h5.timestamp { font-size: 15px; color: #555; font-style: oblique; margin-bottom: 15px; }
-#feed .item p { font-size: 14px; line-height: 1.8em; margin-bottom: 1em; }
+.page #feed .item { padding: 5px 30px 25px 15px; }
+#feed h3 { font-size: 24px; line-height: 1.5em; }
+#feed h3 a, #feed h3 a:hover { color: #444; background: transparent; }
+#feed h3 a:hover { color: #ed1b24; }
+#feed h5.timestamp { font-size: 15px; color: #555; font-style: oblique; margin-bottom: 15px; }
+#feed p { font-size: 14px; line-height: 1.8em; margin-bottom: 1.5em; }
+.page #feed p { font-size: 15px; line-height: 1.6em; }
 #feed .icon { clear: both; width: 100%; height: 50px; background: url('../images/icon_guitar.png') no-repeat 50% 90%; margin-top: 80px; }
+.page #feed .icon { margin-top: 30px; background-image: url('../images/icon_inkwell.png'); }
 #feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; left: 0px; bottom: -27px; }
+#feed hr.full { position: relative; left: -15px; width: 620px; height: 3px; background-image: url('../images/feed_header.png'); border: none; margin-bottom: 35px; }
 
 /****************************************/
 /* FOOTER
