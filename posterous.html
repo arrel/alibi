@@ -1,54 +1,54 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>{PageTitle}</title>
+    <title>{PageTitle}</title>
   
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <meta name="color:Background" content="#fff">
-  <meta name="color:Text" content="#424037">
-  <meta name="color:Post Title" content="#444">    
-  <meta name="color:Lighter Text" content="#999">
-  <meta name="color:Date" content="#C6C1A5">    
-  <meta name="color:Link" content="#bc7134">
+    <meta name="color:Background" content="#fff" />
+    <meta name="color:Text" content="#424037" />
+    <meta name="color:Post Title" content="#444" />    
+    <meta name="color:Lighter Text" content="#999" />
+    <meta name="color:Date" content="#C6C1A5" />    
+    <meta name="color:Link" content="#bc7134" />
   
-  <link rel="icon" href="/images/favicon.png" type="image/x-png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/reset.css?v=1">
-  <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/application.css?v=1">
-  <script src="http://s3.amazonaws.com/alibimagazine/javascripts/libs/modernizr-1.7.min.js"></script>
-
+    <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/reset.css?v=1" />
+    <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/application.css?v=1" />
+    <script src="http://s3.amazonaws.com/alibimagazine/javascripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
 
   <body>
-
+    
+    {block:ShowOrList}
     <div id="container">
+    {/block:ShowOrList}
+    {block:Page}
+    <div id="container" class="page">
+    {/block:Page}
       <div id="header">
         <div class="wrapper">
-          <h1 class="logo"><a href="index.html">
+          <h1 class="logo"><a href="{SiteURL}">
             <em>Alibi</em>
             Literature Rock &amp; Roll
           </a></h1>
 
-          {block:HasPages}
-            <p id="navigation">
-            {block:Pages}
-              <a href="{URL}" class="{Current}" rel="{External}">{Label}</a>
-            {/block:Pages}
-            </p>
-          {/block:HasPages}
+          <p id="navigation">
+            <a href="/pages/about-alibi" class="about">About <em>Alibi</em></a>
+            <a href="/pages/subscribe" class="subscribe">Subscribe</a>
+            <a href="/pages/contact" class="contact">Contact</a>
+          </p>
         </div>
       </div>
 
@@ -96,25 +96,32 @@
           <div class="clearfix"></div>
 
         </div>
-
+        
+        {block:Homepage}
         <h4 class="headline">
-          <span class="lead">A</span><em>libi</em> is a new sort of magazine focused on literature and rock &amp; roll. It’s published using a mix of traditional and innovative approaches – not only online, not only print, but a unique blend of the page, the stage, and the web.  No high-quality magazine exists that presents rock music and literature side-by-side and explores their exhilarating relationship. Not until now. Keep an eye on this site for new films, audio, and writing, and for news on our debut print magazine and live event, starring Neko Case, launching this winter.
+          <span class="lead">A</span><em>libi</em> is a new sort of magazine focused on literature and rock &amp; roll. It’s published using a mix of traditional and innovative approaches – not only online, not only print, but a unique blend of the page, the stage, and the web.  No high-quality magazine exists that presents rock music and literature side-by-side and explores their exhilarating relationship. Not until now. Keep an eye on this site for new films, audio, and writing, and for news on our debut print magazine and live event, starring Neko Case, launching this winter.
         </h4>
-
-        <div id="feed">
+        {/block:Homepage}
+        
+        {block:Page}
+          {Body}
+        {/block:Page}
+        
+        {block:ShowOrList}
+        <div class="feed">
           <h2 class="headline_alibinews">Alibi News</h2>
           <hr />
-          
+        
           {block:Posts}
           <div class="item">
             {block:Private}
-              <aside class="private">
-                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png"></a>
-                <div class="private_post_message">
-                  <h6>Private Post</h6>
-                  <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
-                </div>
-              </aside>
+            <aside class="private">
+              <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png"></a>
+              <div class="private_post_message">
+                <h6>Private Post</h6>
+                <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
+              </div>
+            </aside>
             {/block:Private}
             
             {block:EditBox}
@@ -124,29 +131,33 @@
             {/block:EditBox}
             
             {block:Title}
-              <h3><a href="{Permalink}">{Title}</a></h3>
+            <h3><a href="{Permalink}">{Title}</a></h3>
             {/block:Title}
-        		
-        		{block:NewDayDate}
-              <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</a></h4>
+                
+            {block:NewDayDate}
+            <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</a></h4>
             {/block:NewDayDate}
             
-      			{Body}
-      			
-      		</div>
-      		{/block:Posts}
+            {Body}
+            
+          </div>
+          {/block:Posts}
 
           {block:List}
-            <footer id="pagination">
-              {block:Pagination/}
-            </footer>
+          <footer id="pagination">
+            {block:Pagination/}
+          </footer>
           {/block:List}
-
+          
           <img class="icon" src="http://s3.amazonaws.com/alibimagazine/images/icon_guitar.png" alt="Guitar" />
           <div class="bottom"></div>
           
         </div>
+        {/block:ShowOrList}
+        
       </div>
+      
+      <div class="clearfix"></div>
       
       <div id="footer">
         <div class="wrapper">
@@ -154,27 +165,7 @@
           <p>Copyright 2011 <em>Alibi Magazine</em> © &nbsp;All Rights Researved &nbsp; <em>Alibi</em> is a registered 501 (c)3 non-profit organization</p>
         </div>
       </div>
-    </div> <!-- eo #container -->
-
-
-    <!--[if lt IE 7 ]>
-      <script src="http://s3.amazonaws.com/alibimagazine/javascripts/libs/dd_belatedpng.js"></script>
-      <script>DD_belatedPNG.fix("img, .png_bg");</script>
-    <![endif]-->
-
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-20536152-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
+    </div>
 
   </body>
 </html>
