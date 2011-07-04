@@ -2,7 +2,7 @@ body { background: url('../images/background.gif') repeat; font-family: Georgia;
 body, select, input, textarea { color: #232323; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a, a:active, a:visited { color: #ed1b24; text-decoration: none; }
-a:hover { color: #fff; background-color: #ed1b24; }
+a:hover { color: #fff; background-color: #ed1b24; text-shadow: none; }
 
 /****************************************/
 /* HEADER
@@ -37,7 +37,6 @@ a:hover { color: #fff; background-color: #ed1b24; }
 /* SIDEBAR
 /****************************************/
 #sidebar { float: right; width: 300px; padding-left: 20px; text-shadow: 1px 1px 1px #FFF; line-height: 1.5em; }
-#sidebar a:hover { text-shadow: none; }
 #sidebar hr { margin: 25px 2px; border-color: #c4c4c4; }
 #sidebar p { font-size: 14px; text-shadow: 1px 1px 1px #FFF; line-height: 1.5em; margin-bottom: 8px; }
 #sidebar p.info { font-size: 13px; font-style: oblique; color: #545353; margin-top: 15px; line-height: 1.7em; }
@@ -80,5 +79,4 @@ a:hover { color: #fff; background-color: #ed1b24; }
 #footer { width: 100%; height: 55px; margin-top: 110px; background: url('../images/footer/background.gif'); }
 #footer .wrapper { position: relative; width: 960px; margin: auto; vertical-align: middle; }
 #footer p { font-size: 12px; line-height: 52px; padding: 3px 0 0 127px; color: #fff; text-shadow: 1px 1px 1px #000; }
-#footer em { font-style: oblique;}
 #footer p.banner { width: 155px; height: 52px; position: absolute; top: -22px; left: -4px; padding: 0; text-indent: -9999px; background-image: url('../images/footer/banner.png'); }
