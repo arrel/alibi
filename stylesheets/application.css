@@ -3,6 +3,7 @@ body, select, input, textarea { color: #232323; }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a, a:active, a:visited { color: #ed1b24; text-decoration: none; }
 a:hover { color: #fff; background-color: #ed1b24; text-shadow: none; }
+a.img:hover { background-color: transparent; }
 
 /****************************************/
 /* HEADER
@@ -43,6 +44,7 @@ a:hover { color: #fff; background-color: #ed1b24; text-shadow: none; }
 #sidebar p.info { font-size: 13px; font-style: oblique; color: #545353; margin-top: 15px; line-height: 1.7em; }
 #sidebar h3 { text-indent: -9999px; background-repeat: no-repeat; width: 100%; height: 30px; margin-bottom: 8px; }
 #sidebar h3.headline_wereonkickstarter { background-image: url('../images/sidebar/headline_wereonkickstarter.png') }
+#sidebar h3.headline_kickstartus { background-image: url('../images/sidebar/headline_kickstartus.png') }
 #sidebar h3.headline_thealibiteam { background-image: url('../images/sidebar/headline_thealibiteam.png') }
 #sidebar h5 { font-size: 17px; margin-bottom: 19px; }
 #sidebar h6 { font-weight: bold; }
