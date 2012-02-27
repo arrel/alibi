@@ -33,8 +33,14 @@ a.img:hover { background-color: transparent; }
 #main h1.about { background-image: url('../images/title_about.png'); }
 #main h1.subscribe { background-image: url('../images/title_subscribe.png'); }
 #main h1.contact { background-image: url('../images/title_contact.png'); }
+#main h1.getupdates { background-image: url('../images/title_getupdates.png'); }
 #main .icon { display: block; position: relative; margin: 60px auto; padding-right: 80px; }
 
+#main h3.subhead { height: 30px; text-indent: -9999px; background-repeat: no-repeat; }
+#main h3.subhead.radio_silence_live { background-image: url('../images/pages/subtitle_live.png'); }
+#main h3.subhead.radio_silence_on_the_page { background-image: url('../images/pages/subtitle_on_the_page.png'); }
+#main h3.subhead.radio_silence_online { background-image: url('../images/pages/subtitle_on_the_web.png'); }
+#main h3.subhead.do_it_for_the_kids { background-image: url('../images/pages/subtitle_for_the_kids.png'); }
 
 /****************************************/
 /* SIDEBAR
@@ -55,6 +61,7 @@ a.img:hover { background-color: transparent; }
 #sidebar .social a.twitter { background-image: url('../images/sidebar/social_twitter.png'); }
 #sidebar .social a.facebook { background-image: url('../images/sidebar/social_facebook.png'); }
 #sidebar .social a.rss { background-image: url('../images/sidebar/social_rss.png'); }
+#sidebar .social a.email { background-image: url('../images/sidebar/social_email.png'); }
 #sidebar dl { line-height: 1.5em; }
 #sidebar dt { font-style: oblique; margin: 18px 0 0 0; }
 #sidebar dd { font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 26px; }
@@ -96,3 +103,10 @@ a.img:hover { background-color: transparent; }
 /* POSTEROUS OVERRIDES
 /****************************************/
 div.posterousGalleryMainDiv { margin: 0; }
+
+/****************************************/
+/* PAGES
+/****************************************/
+input.button { display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; padding: 0 20px; margin: 0 0 0 5px; background-color: #aaa; border: 0 none; color: #FFFFFF; cursor: pointer; font-size:15px; font-weight: bold; height: 28px; line-height: 28px; text-decoration: none; white-space: nowrap; width: auto; }
+input.button:hover { background-color:#777; }
+
