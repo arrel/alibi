@@ -5,44 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>{PageTitle}</title>
-  
-    <meta name="description" content="" />
+
+    <meta name="description" content="{Description}" />
     <meta name="author" content="" />
     <meta property="og:site_name" content="{Title}"/>
     {block:Show}<meta property="og:title" content="{PageTitle}"/>{/block:Show}
     {block:Page}<meta property="og:title" content="{PageTitle}"/>{/block:Page}
-    <meta property="og:description" content="Alibi is a new sort of magazine focused on literature and rock &amp; roll. It’s published using a mix of traditional and innovative approaches – not only online, not only print, but a unique blend of the page, the stage, and the web. No high-quality magazine exists that presents rock music and literature side-by-side and explores their exhilarating relationship. Not until now. Keep an eye on this site for new films, audio, and writing, and for news on our debut print magazine and live event, starring Neko Case, launching this winter."/>
+    <meta property="og:description" content="{Description}"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-    <link rel="icon" href="http://s3.amazonaws.com/alibimagazine/images/favicon.png" type="image/x-png" />
-    <link rel="shortcut icon" href="http://s3.amazonaws.com/alibimagazine/images/favicon.ico" />
+    <link rel="icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.png" type="image/x-png" />
+    <link rel="shortcut icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.ico" />
 
-    <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/reset.css?v=1" />
-    <link rel="stylesheet" href="http://s3.amazonaws.com/alibimagazine/stylesheets/application.css?v=3" />
-    <script src="http://s3.amazonaws.com/alibimagazine/javascripts/libs/modernizr-1.7.min.js"></script>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/maintainradiosilence/stylesheets/reset.css?v=1" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/maintainradiosilence/stylesheets/application.css?v=3" />
+    <script src="http://s3.amazonaws.com/maintainradiosilence/javascripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
 
   <body>
-    
-    {block:ShowOrList}
+
     <div id="container">
-    {/block:ShowOrList}
-    {block:Page}
-    <div id="container" class="page">
-    {/block:Page}
       <div id="header">
         <div class="wrapper">
-          <h1 class="logo"><a href="{SiteURL}">
-            <em>Alibi</em>
-            Literature Rock &amp; Roll
-          </a></h1>
+          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/maintainradiosilence/images/header/logo.png" alt="Radio Silence" /></a></h1>
 
           <p id="navigation">
-            <a href="/pages/about-alibi" class="about">About <em>Alibi</em></a>
-            <a href="/pages/subscribe" class="subscribe">Subscribe</a>
+            <a href="/pages/about-radio-silence" class="about">About</a>
+            <a href="https://www.wepay.com/stores/632778" target="_blank" class="subscribe">Subscribe</a>
             <a href="/pages/contact" class="contact">Contact</a>
           </p>
         </div>
@@ -51,115 +43,117 @@
       <div id="main" role="main">
 
         <div id="sidebar">
-          <h3 class="headline_kickstartus">Kickstart Us</h3>
-          <p><em>Alibi</em> is live on Kickstarter.  Check out our project page to contribute and get badass rewards in return -- subscriptions, concert tickets, private rock shows, and rare collectibles.</p>
-          <h5><a href="http://www.kickstarter.com/projects/2042814870/alibi-a-magazine-of-literature-and-rock-and-roll" target="_blank">Join <em>Alibi</em> on Kickstarter</a></h5>
-          <a href="http://www.kickstarter.com/projects/2042814870/alibi-a-magazine-of-literature-and-rock-and-roll" target="_blank" class="img"><img src="http://s3.amazonaws.com/alibimagazine/images/fpo/fpo_kickstartervideo.jpg" /></a>
-          <p class="info"><em>Alibi</em> is a registered nonprofit corporation. Any donations over $40 will be rewarded with a free subscription for the donor to use or give away as a gift.</p>
-
-          <hr />
-
-          <h6>Subscription and Donation Inquiries</h6>
-          <p>To subscribe or donate to <em>Alibi</em>, please send an email to <a href="mailto:info@alibimagazine.com">info [at] alibimagazine.com</a></p>
-          <p>Annual subscriptions to <em>Alibi</em> cost $40 and include the four quarterly issues of the print magazine, full access to subscriber-only features of the website, and first dibs on tickets to our live events.</p>
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_top.jpg" class="bg_top" alt="." />
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_bottom.jpg" class="bg_bottom" alt="." />
+          <h3 class="headline_subscriptions">Subscriptions &amp; Donations</h3>
+          <p>
+            To subscribe or purchase a single issue, please <a href="https://www.wepay.com/stores/radio_silence_general_store" target="_blank">visit our store at WePay</a>.
+            Contact us for information on making financial contributions or other bequests:<br />
+            <a href="mailto:info@maintainradiosilence.com">info [at] maintainradiosilence.com</a>
+          </p>
+          <p>Annual subscriptions to RADIO SILENCE cost $25 and include two issues of the print magazine, full access to subscriber-only features of the website, and first dibs on tickets to our live events.</p>
+          <p class="info">RADIO SILENCE is a 501(c)3 nonprofit corporation.  All donations are tax-deductible.</p>
 
           <hr />
 
           <p class="social">
-            <a class="twitter" href="http://twitter.com/alibimagazine" target="_blank">We're on Twitter</a>
-            <a class="facebook" href="http://www.facebook.com/pages/Alibi-Magazine/209606832389441" target="_blank">Find us on Facebook</a>
-            <a class="rss" href="http://feeds.feedburner.com/AlibiLiteratureRockRoll" target="_blank">Subscribe to our Updates</a>
+            <a class="email" href="/pages/get-updates">Get Updates</a>
+            <a class="twitter" href="http://twitter.com/radio_silenzio" target="_blank">We're on Twitter</a>
+            <a class="facebook" href="http://www.facebook.com/pages/Radio-Silence/309465372425410" target="_blank">Find us on Facebook</a>
           </p>
 
           <hr />
 
-          <h3 class="headline_thealibiteam">The <em>Alibi</em> Team</h3>
+          <h3 class="headline_theteam">The Team</h3>
           <dl>
-            <dt>Executive Director and Editor:</dt>
+            <dt>Editor-in-Chief &amp; Executive Director:</dt>
             <dd>Dan Stone</dd>
 
-            <dt>Design Director:</dt> 
+            <dt>Design Director:</dt>
             <dd>Brandon Herring</dd>
+
+            <dt>Copy Editor:</dt>
+            <dd>Kim Gooden</dd>
+
+            <dt>Editorial Assistant:</dt>
+            <dd>Darby Beck</dd>
 
             <dt>Board of Directors:</dt>
             <dd>
-              Dan Stone<br />
               Neko Case<br />
-              Zach Rogue<br />
               Brandon Herring<br />
-              Jake Martin
+              Jake Martin<br />
+              Zach Rogue<br />
+              Dan Stone
             </dd>
           </dl>
           <div class="clearfix"></div>
-
         </div>
-        
+
         {block:Homepage}
         <h4 class="headline">
-          <span class="lead">A</span><em>libi</em> is a new sort of magazine focused on literature and rock &amp; roll. It’s published using a mix of traditional and innovative approaches – not only online, not only print, but a unique blend of the page, the stage, and the web.  No high-quality magazine exists that presents rock music and literature side-by-side and explores their exhilarating relationship.<br />Not until now. Keep an eye on this site for new films, audio, and writing, and for news on our debut print magazine and live event, starring Neko Case, launching this winter.
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/pages/hero_issue1.png" alt="Issue Number One" />
         </h4>
         {/block:Homepage}
-        
+
         {block:Page}
           {Body}
         {/block:Page}
-        
+
         {block:ShowOrList}
         <div class="feed">
-          <h2 class="headline_alibinews">Alibi News</h2>
-          <hr />
-        
-          {block:Posts}
-          <div class="item">
-            {block:Private}
-            <aside class="private">
-              <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
-              <div class="private_post_message">
-                <h6>Private Post</h6>
-                <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
-              </div>
-            </aside>
-            {/block:Private}
-            
-            {block:EditBox}
-            <div class="editbox">
-              {EditBoxContents}
-            </div>
-            {/block:EditBox}
-            
-            {block:Title}
-            <h3><a href="{Permalink}">{Title}</a></h3>
-            {/block:Title}
-                
-            {block:NewDayDate}
-            <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
-            {/block:NewDayDate}
-            
-            {Body}
-            
-          </div>
-          {/block:Posts}
+          <p class="separator"><img src="https://s3.amazonaws.com/maintainradiosilence/images/separator.png" alt="---" /></p>
+          <h2 class="headline_recentnews">Recent News</h2>
 
-          {block:List}
-          <footer id="pagination">
-            {block:Pagination/}
-          </footer>
-          {/block:List}
-          
-          <img class="icon" src="http://s3.amazonaws.com/alibimagazine/images/icon_guitar.png" alt="Guitar" />
-          <div class="bottom"></div>
-          
-        </div>
-        {/block:ShowOrList}
-        
+            {block:Posts}
+            <div class="item">
+              {block:Private}
+              <aside class="private">
+                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
+                <div class="private_post_message">
+                  <h6>Private Post</h6>
+                  <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
+                </div>
+              </aside>
+              {/block:Private}
+
+              {block:EditBox}
+              <div class="editbox">
+                {EditBoxContents}
+              </div>
+              {/block:EditBox}
+
+              {block:Title}
+              <h3><a href="{Permalink}">{Title}</a></h3>
+              {/block:Title}
+
+              {block:NewDayDate}
+              <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
+              {/block:NewDayDate}
+
+              {Body}
+
+            </div>
+            {/block:Posts}
+
+            {block:List}
+
+            <footer id="pagination">
+              {block:Pagination/}
+            </footer>
+            {/block:List}
+
+          </div>
+          {/block:ShowOrList}
+
       </div>
-      
+
       <div class="clearfix"></div>
-      
+
       <div id="footer">
         <div class="wrapper">
           <p class="banner">Made in Oakland, CA</p>
-          <p>Copyright 2011 <em>Alibi Magazine</em> © &nbsp;All Rights Reserved &nbsp; <em>Alibi</em> is a registered nonprofit organization</p>
+          <p>Copyright 2012 RADIO SILENCE Magazine © &nbsp;All Rights Reserved &nbsp; <em>RADIO SILENCE</em> is a 501(c)3 nonprofit corporation</p>
         </div>
       </div>
     </div>
