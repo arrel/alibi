@@ -1,0 +1,8 @@
+.feed { width: 940px; }
+.feed .item {
+	display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline;
+	vertical-align: top; width: 300px; padding: 25px 20px 10px 0px;
+}
+.feed .item:nth-child(3n+2) {
+	padding: 25px 0 10px 0px;
+}

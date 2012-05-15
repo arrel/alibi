@@ -16,12 +16,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-    <link rel="icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.png" type="image/x-png" />
-    <link rel="shortcut icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.ico" />
+    <link rel="icon" href="http://s3.amazonaws.com/radiosilencestaging/images/favicon.png" type="image/x-png" />
+    <link rel="shortcut icon" href="http://s3.amazonaws.com/radiosilencestaging/images/favicon.ico" />
 
-    <link rel="stylesheet" href="http://s3.amazonaws.com/maintainradiosilence/stylesheets/reset.css?v=1" />
-    <link rel="stylesheet" href="https://s3.amazonaws.com/maintainradiosilence/stylesheets/application.css?v=3" />
-    <script src="http://s3.amazonaws.com/maintainradiosilence/javascripts/libs/modernizr-1.7.min.js"></script>
+    <link rel="stylesheet" href="http://s3.amazonaws.com/radiosilencestaging/stylesheets/reset.css?v=1" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/application.css?v=3" />
+    {block:Tag}<link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/tag.css?v=3" />{/block:Tag}
+    <script src="http://s3.amazonaws.com/radiosilencestaging/javascripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
 
@@ -30,9 +31,11 @@
     <div id="container">
       <div id="header">
         <div class="wrapper">
-          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/maintainradiosilence/images/header/logo.png" alt="Radio Silence" /></a></h1>
+          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/radiosilencestaging/images/header/logo.png" alt="Radio Silence" /></a></h1>
 
           <p id="navigation">
+            <a href="/tags/writings" class="writings">Writings</a>
+            <a href="/tags/sights-and-sounds" class="sightsandsounds">Sights &amp; Sounds</a>
             <a href="/pages/about-radio-silence" class="about">About</a>
             <a href="https://www.wepay.com/stores/632778" target="_blank" class="subscribe">Subscribe</a>
             <a href="/pages/contact" class="contact">Contact</a>
@@ -42,9 +45,10 @@
 
       <div id="main" role="main">
 
+        {block:NotSearchOrTag}
         <div id="sidebar">
-          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_top.jpg" class="bg_top" alt="." />
-          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_bottom.jpg" class="bg_bottom" alt="." />
+          <img src="https://s3.amazonaws.com/radiosilencestaging/images/sidebar/bg_top.jpg" class="bg_top" alt="." />
+          <img src="https://s3.amazonaws.com/radiosilencestaging/images/sidebar/bg_bottom.jpg" class="bg_bottom" alt="." />
           <h3 class="headline_subscriptions">Subscriptions &amp; Donations</h3>
           <p>
             To subscribe or purchase a single issue, please <a href="https://www.wepay.com/stores/radio_silence_general_store" target="_blank">visit our store at WePay</a>.
@@ -92,10 +96,11 @@
           </dl>
           <div class="clearfix"></div>
         </div>
+        {/block:NotSearchOrTag}
 
         {block:Homepage}
         <h4 class="headline">
-          <img src="https://s3.amazonaws.com/maintainradiosilence/images/pages/hero_launch.png" alt="Issue Number One" />
+          <img src="https://s3.amazonaws.com/radiosilencestaging/images/pages/hero_launch.png" alt="Issue Number One" />
         </h4>
         {/block:Homepage}
 
@@ -103,9 +108,44 @@
           {Body}
         {/block:Page}
 
-        {block:ShowOrList}
+        {block:Tag}
         <div class="feed">
-          <p class="separator"><img src="https://s3.amazonaws.com/maintainradiosilence/images/separator.png" alt="---" /></p>
+          <h1 class="{Tag}">{Tag}</h1>
+          <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator-full.png" alt="---" /></p>
+
+          {block:Posts}<div class="item">
+            {block:Private}
+            <aside class="private">
+              <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
+              <div class="private_post_message">
+                <h6>Private Post</h6>
+                <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
+              </div>
+            </aside>
+            {/block:Private}
+
+            {Body}
+
+            {block:EditBox}
+            <div class="editbox">
+              {EditBoxContents}
+            </div>
+            {/block:EditBox}
+
+          </div>{/block:Posts}
+
+          {block:List}
+          <footer id="pagination">
+            {block:Pagination/}
+          </footer>
+          {/block:List}
+
+        </div>
+        {/block:Tag}
+
+        {block:NotSearchOrTag}
+        <div class="feed">
+          <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator.png" alt="---" /></p>
           <h2 class="headline_recentnews">Recent News</h2>
 
             {block:Posts}
@@ -147,7 +187,7 @@
             {/block:List}
 
           </div>
-          {/block:ShowOrList}
+          {/block:NotSearchOrTag}
 
       </div>
 

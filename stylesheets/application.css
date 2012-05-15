@@ -34,6 +34,9 @@ a.img:hover { background-color: transparent; }
 #main h1.subscribe { background-image: url('../images/title_subscribe.png'); }
 #main h1.contact { background-image: url('../images/title_contact.png'); }
 #main h1.getupdates { background-image: url('../images/title_getupdates.png'); }
+#main h1.sightsandsounds,
+#main h1.sights-and-sounds { background-image: url('../images/title_sightsandsounds.png'); }
+#main h1.writings { background-image: url('../images/title_writings.png'); }
 #main .icon { display: block; position: relative; margin: 60px auto; padding-right: 80px; }
 
 #main h3.subhead { height: 30px; text-indent: -9999px; background-repeat: no-repeat; }
