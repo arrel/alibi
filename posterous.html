@@ -31,15 +31,14 @@
     <div id="container">
       <div id="header">
         <div class="wrapper">
-          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/radiosilencestaging/images/header/logo.png" alt="Radio Silence" /></a></h1>
-
           <p id="navigation">
-            <a href="/tags/writings" class="writings">Writings</a>
-            <a href="/tags/sights-and-sounds" class="sightsandsounds">Sights &amp; Sounds</a>
+            <a href="/tag/writings" class="writings">Writings</a>
+            <a href="/tag/sightsandsounds" class="sightsandsounds">Sights &amp; Sounds</a>
             <a href="/pages/about-radio-silence" class="about">About</a>
             <a href="https://www.wepay.com/stores/632778" target="_blank" class="subscribe">Subscribe</a>
             <a href="/pages/contact" class="contact">Contact</a>
           </p>
+          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/radiosilencestaging/images/header/logo.png" alt="Radio Silence" /></a></h1>
         </div>
       </div>
 
@@ -144,50 +143,48 @@
         {/block:Tag}
 
         {block:NotSearchOrTag}
-        <div class="feed">
+        <div class="feed {TagsAsClasses}">
           <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator.png" alt="---" /></p>
           <h2 class="headline_recentnews">Recent News</h2>
 
-            {block:Posts}
-            <div class="item">
-              {block:Private}
-              <aside class="private">
-                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
-                <div class="private_post_message">
-                  <h6>Private Post</h6>
-                  <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
-                </div>
-              </aside>
-              {/block:Private}
-
-              {block:EditBox}
-              <div class="editbox">
-                {EditBoxContents}
+          {block:Posts}
+          <div class="item {TagsAsClasses}">
+            {block:Private}
+            <aside class="private">
+              <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
+              <div class="private_post_message">
+                <h6>Private Post</h6>
+                <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
               </div>
-              {/block:EditBox}
+            </aside>
+            {/block:Private}
 
-              {block:Title}
-              <h3><a href="{Permalink}">{Title}</a></h3>
-              {/block:Title}
-
-              {block:NewDayDate}
-              <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
-              {/block:NewDayDate}
-
-              {Body}
-
+            {block:EditBox}
+            <div class="editbox">
+              {EditBoxContents}
             </div>
-            {/block:Posts}
+            {/block:EditBox}
 
-            {block:List}
+            {block:Title}
+            <h3><a href="{Permalink}">{Title}</a></h3>
+            {/block:Title}
 
-            <footer id="pagination">
-              {block:Pagination/}
-            </footer>
-            {/block:List}
+            {block:NewDayDate}
+            <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
+            {/block:NewDayDate}
+
+            {Body}
 
           </div>
-          {/block:NotSearchOrTag}
+          {/block:Posts}
+
+          {block:List}
+          <footer id="pagination">
+            {block:Pagination/}
+          </footer>
+          {/block:List}
+        </div>
+        {/block:NotSearchOrTag}
 
       </div>
 

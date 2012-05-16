@@ -6,3 +6,6 @@
 .feed .item:nth-child(3n+2) {
 	padding: 25px 0 10px 0px;
 }
+.feed .item p { display: none; }
+.feed .item img { display: none; }
+.feed .item h3 img { display: inline; }

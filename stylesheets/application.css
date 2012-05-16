@@ -8,19 +8,21 @@ a.img:hover { background-color: transparent; }
 /****************************************/
 /* HEADER
 /****************************************/
-#container { background-image: url('../images/header/background_pattern.gif'); background-repeat: repeat-x; }
-#header { height: 107px; background: #030302; background-image: url('../images/header/background.jpg'); background-repeat: no-repeat; background-position: center top; min-width: 939px; }
+#container { background-image: url('../images/header/background_pattern.jpg'); background-repeat: repeat-x; }
+#header { height: 107px; background-image: url('../images/header/background_design.jpg'); background-repeat: no-repeat; background-position: center top; min-width: 939px; }
 #header .wrapper { width: 939px; height: 100%; margin: auto; position: relative; }
-#header .logo { position: relative; z-index: 2; }
+#header .logo { padding-top: 30px; }
 #header .logo a:hover { background-color: transparent; }
 #header .background { position: absolute; top: 0; left: 0; z-index: 1; }
 .page #header { height: 112px; background-image: url('../images/header/background_page.jpg'); }
 
-#navigation { position: relative; z-index: 3; }
-#navigation a { display: block; float: left; text-indent: -9999px; height: 23px; background-color: transparent; background-position: 0 0; }
-#navigation a.about { width: 87px; background-image: url('../images/header/nav_about.png'); }
-#navigation a.subscribe { width: 123px; background-image: url('../images/header/nav_subscribe.png'); }
-#navigation a.contact { width: 112px; background-image: url('../images/header/nav_contact.png'); }
+#navigation { float: right; margin-top: 80px; }
+#navigation a { display: block; float: left; text-indent: -9999px; height: 17px; background-color: transparent; background-position: 0 0; }
+#navigation a.writings { width: 84px; background-image: url('../images/header/nav_writings.png'); }
+#navigation a.sightsandsounds { width: 151px; background-image: url('../images/header/nav_sightsandsounds.png'); }
+#navigation a.about { width: 73px; background-image: url('../images/header/nav_about.png'); }
+#navigation a.subscribe { width: 103px; background-image: url('../images/header/nav_subscribe.png'); }
+#navigation a.contact { width: 82px; background-image: url('../images/header/nav_contact.png'); }
 
 /****************************************/
 /* MAIN
@@ -29,7 +31,7 @@ a.img:hover { background-color: transparent; }
 #main h4 { float: left; width: 600px; font-size: 18px; line-height: 1.6em; text-shadow: 1px 1px 1px #fff; margin: -6px 0 25px 0; }
 #main h4 span.lead { float: left; font-size: 72px; line-height: 62px; margin: -7px 3px 0 8px; font-style: oblique; }
 #main h4.headline { margin: 10px 0 50px 0; }
-#main h1 { height: 69px; text-indent: -9999px; background-repeat: no-repeat; }
+#main h1 { height: 69px; text-indent: -9999px; background-repeat: no-repeat; margin-top: 40px; }
 #main h1.about { background-image: url('../images/title_about.png'); }
 #main h1.subscribe { background-image: url('../images/title_subscribe.png'); }
 #main h1.contact { background-image: url('../images/title_contact.png'); }
@@ -92,6 +94,13 @@ a.img:hover { background-color: transparent; }
 .page .feed .icon { margin-top: 0; }
 .feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; left: 0px; bottom: -27px; }
 .feed hr.full { position: relative; left: -15px; width: 620px; height: 3px; background-image: url('../images/feed_header.png'); border: none; margin-bottom: 35px; }
+
+/****************************************/
+/* HOMEPAGE
+/****************************************/
+.feed .item.writings,
+.feed .item.sightsandsounds { display: none; }
+
 
 /****************************************/
 /* FOOTER
