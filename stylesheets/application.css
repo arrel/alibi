@@ -119,8 +119,11 @@ input.button:hover { background-color:#777; }
 /****************************************/
 /* ESSAYS
 /****************************************/
-#main .feed .item.writings h2 { font-size: 18px; font-family: Arial; font-weight: bold; color: #7D7D7D; }
+#main .feed .item.writings h2 { font-size: 18px; font-family: Arial; font-weight: bold; color: #5d5d5d; text-shadow: 1px 1px 1px #fff; }
+#main .feed .item.writings h3 { font-size: 36px; line-height: 1.2em; }
 #main .feed .item.writings h4 { display: none; }
 #main .feed .item.writings h5 { display: none; }
 #main .feed .item.writings h6 { display: none; }
-#main .feed .item.writings img { float: left; margin: 0 15px 20px 0; }
+#main .feed .item.writings img { float: left; margin: 5px 20px 20px 0; }
+#main .feed .item p.cta { display: none; }
+#main .feed .item.writings p.cta { display: block; margin: 0; font-weight: bold; }

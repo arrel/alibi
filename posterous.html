@@ -152,47 +152,53 @@
         {/block:Tag}
 
         {block:NotSearchOrTag}
-        <div class="feed {TagsAsClasses}">
-          <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator.png" alt="---" /></p>
-          <h2 class="headline_recentnews">Recent News</h2>
+          {block:ShowOrList}
+          <div class="feed {TagsAsClasses}">
+            {block:Homepage}
+            <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator.png" alt="---" /></p>
+            <h2 class="headline_recentnews">Recent News</h2>
+            {/block:Homepage}
 
-          {block:Posts}
-          <div class="item {TagsAsClasses}">
-            {block:Private}
-            <aside class="private">
-              <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
-              <div class="private_post_message">
-                <h6>Private Post</h6>
-                <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
+            {block:Posts}
+            <div class="item {TagsAsClasses}">
+              <p class="cta"><a href="/tag/writings">Back to Writings</a>
+
+              {block:Private}
+              <aside class="private">
+                <a href="{Permalink}" class="tooltip_link"><img src="/images/icons/lock12.png" /></a>
+                <div class="private_post_message">
+                  <h6>Private Post</h6>
+                  <p>This post has a secret URL and not linked on your public site. Send the secret URL to share it with anyone.</p>
+                </div>
+              </aside>
+              {/block:Private}
+
+              {block:EditBox}
+              <div class="editbox">
+                {EditBoxContents}
               </div>
-            </aside>
-            {/block:Private}
+              {/block:EditBox}
 
-            {block:EditBox}
-            <div class="editbox">
-              {EditBoxContents}
+              {block:Title}
+              <h3><a href="{Permalink}">{Title}</a></h3>
+              {/block:Title}
+
+              {block:NewDayDate}
+              <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
+              {/block:NewDayDate}
+
+              {Body}
+
             </div>
-            {/block:EditBox}
+            {/block:Posts}
 
-            {block:Title}
-            <h3><a href="{Permalink}">{Title}</a></h3>
-            {/block:Title}
-
-            {block:NewDayDate}
-            <h5 class="timestamp">{Month} {DayOfMonth}, {Year}</h5>
-            {/block:NewDayDate}
-
-            {Body}
-
+            {block:List}
+            <footer id="pagination">
+              {block:Pagination/}
+            </footer>
+            {/block:List}
           </div>
-          {/block:Posts}
-
-          {block:List}
-          <footer id="pagination">
-            {block:Pagination/}
-          </footer>
-          {/block:List}
-        </div>
+          {/block:ShowOrList}
         {/block:NotSearchOrTag}
 
       </div>
