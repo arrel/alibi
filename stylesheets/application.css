@@ -95,12 +95,6 @@ a.img:hover { background-color: transparent; }
 .feed .bottom { background: url('../images/feed_footer.png'); width: 619px; height: 27px; position: absolute; left: 0px; bottom: -27px; }
 .feed hr.full { position: relative; left: -15px; width: 620px; height: 3px; background-image: url('../images/feed_header.png'); border: none; margin-bottom: 35px; }
 
-/****************************************/
-/* HOMEPAGE
-/****************************************/
-.feed .item.writings,
-.feed .item.sightsandsounds { display: none; }
-
 
 /****************************************/
 /* FOOTER
@@ -122,3 +116,11 @@ div.posterousGalleryMainDiv { margin: 0; }
 input.button { display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; padding: 0 20px; margin: 0 0 0 5px; background-color: #aaa; border: 0 none; color: #FFFFFF; cursor: pointer; font-size:15px; font-weight: bold; height: 28px; line-height: 28px; text-decoration: none; white-space: nowrap; width: auto; }
 input.button:hover { background-color:#777; }
 
+/****************************************/
+/* ESSAYS
+/****************************************/
+#main .feed .item.writings h2 { font-size: 18px; font-family: Arial; font-weight: bold; color: #7D7D7D; }
+#main .feed .item.writings h4 { display: none; }
+#main .feed .item.writings h5 { display: none; }
+#main .feed .item.writings h6 { display: none; }
+#main .feed .item.writings img { float: left; margin: 0 15px 20px 0; }

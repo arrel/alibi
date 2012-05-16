@@ -3,9 +3,17 @@
 	display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline;
 	vertical-align: top; width: 300px; padding: 25px 20px 10px 0px;
 }
-.feed .item:nth-child(3n+2) {
-	padding: 25px 0 10px 0px;
-}
-.feed .item p { display: none; }
-.feed .item img { display: none; }
-.feed .item h3 img { display: inline; }
+.feed .item:nth-child(3n) { padding: 25px 0 10px 0px; }
+
+#main .feed .item h3 img { display: inline; }
+#main .feed h4.cta { display: none; }
+#main .feed .item h4 { float: none; width: auto; margin: 0; line-height: 1.4em; }
+#main .feed.writings h4.cta.writings { float: none; font-family: Georgia, serif; font-weight: normal; display: block; }
+#main .feed .item h4 { font-size: 18px; font-weight: bold; font-family: Arial, sans-serif; }
+
+#main .feed .item h5 { margin: 0; font-size: 18px; line-height: 1.5em; }
+#main .feed.writings .item h5 { font-family: Arial, sans-serif; }
+#main .feed .item h6 { line-height: 1.6em; }
+#main .feed .item h4 img { margin-bottom: 10px; }
+
+#main .feed.sightsandsounds .item h4 { font-size: 21px; font-weight: bold; font-family: Arial, sans-serif; margin-top: 10px; }

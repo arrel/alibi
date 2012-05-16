@@ -20,8 +20,14 @@
     <link rel="shortcut icon" href="http://s3.amazonaws.com/radiosilencestaging/images/favicon.ico" />
 
     <link rel="stylesheet" href="http://s3.amazonaws.com/radiosilencestaging/stylesheets/reset.css?v=1" />
-    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/application.css?v=3" />
-    {block:Tag}<link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/tag.css?v=3" />{/block:Tag}
+    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/application.css?v=4" />
+    {block:Tag}
+    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/tag.css?v=0" />
+    {/block:Tag}
+    {block:Homepage}
+    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/home.css?v=0" />
+    {/block:Homepage}
+
     <script src="http://s3.amazonaws.com/radiosilencestaging/javascripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
@@ -108,10 +114,13 @@
         {/block:Page}
 
         {block:Tag}
-        <div class="feed">
+        <div class="feed {Tag}">
           <h1 class="{Tag}">{Tag}</h1>
           <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator-full.png" alt="---" /></p>
-
+          <h4 class="cta writings">
+            Selected excerpts from Issue Number 1 of Radio Silence<br />
+            <a href="https://www.wepay.com/stores/632778" target="_blank">Order your copy now.</a>
+          </h4>
           {block:Posts}<div class="item">
             {block:Private}
             <aside class="private">
