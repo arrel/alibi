@@ -3,17 +3,26 @@
 	display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline;
 	vertical-align: top; width: 300px; padding: 25px 20px 10px 0px;
 }
-.feed .item:nth-child(3n) { padding: 25px 0 10px 0px; }
+.feed.writings .item:nth-child(3n+1) { padding: 25px 0 10px 0px; }
+.feed.sightsandsounds .item:nth-child(2n) { padding: 25px 0 10px 0px; }
+.feed.sightsandsounds .item { width: 460px; }
 
 #main .feed .item h3 img { display: inline; }
+#main .feed .item h4 a { color: #232323; }
+#main .feed .item h4 a:hover { color: #FFFFFF; }
 #main .feed h4.cta { display: none; }
 #main .feed .item h4 { float: none; width: auto; margin: 0; line-height: 1.4em; }
 #main .feed.writings h4.cta.writings { float: none; font-family: Georgia, serif; font-weight: normal; display: block; }
-#main .feed .item h4 { font-size: 18px; font-weight: bold; font-family: Arial, sans-serif; }
+#main .feed.sightsandsounds h4.cta.sightsandsounds { float: none; text-align: right; font-family: Georgia, serif; font-weight: normal; display: block; width: 100%; font-size: 13px; }
+#main .feed .copyright { display: none; }
+#main .feed .copyright .border { height: 0; width: 100%; border-top: 1px solid rgba(188, 188, 188, 0.5); border-bottom: 1px solid white; margin-bottom: 25px; }
+#main .feed.sightsandsounds .copyright.sightsandsounds { display: block; margin-top: 100px; font-size: 14px; color: #434343; line-height: 24px; text-shadow: 1px 1px 1px #fff; }
 
+#main .feed .item h4 { font-size: 18px; font-weight: bold; font-family: Arial, sans-serif; }
 #main .feed .item h5 { margin: 0; font-size: 18px; line-height: 1.5em; }
 #main .feed.writings .item h5 { font-family: Arial, sans-serif; }
+#main .feed.sightsandsounds .item h5 { font-size: 20px; }
 #main .feed .item h6 { line-height: 1.6em; }
 #main .feed .item h4 img { margin-bottom: 10px; }
-
-#main .feed.sightsandsounds .item h4 { font-size: 21px; font-weight: bold; font-family: Arial, sans-serif; margin-top: 10px; }
+#main .feed.sightsandsounds .item h4 { font-size: 23px; font-weight: bold; font-family: Arial, sans-serif; margin-top: 10px; color: #303030; }
+#main .feed.sightsandsounds .item h4 span { font-weight: normal; }

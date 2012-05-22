@@ -16,19 +16,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-    <link rel="icon" href="http://s3.amazonaws.com/radiosilencestaging/images/favicon.png" type="image/x-png" />
-    <link rel="shortcut icon" href="http://s3.amazonaws.com/radiosilencestaging/images/favicon.ico" />
+    <link rel="icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.png" type="image/x-png" />
+    <link rel="shortcut icon" href="http://s3.amazonaws.com/maintainradiosilence/images/favicon.ico" />
 
-    <link rel="stylesheet" href="http://s3.amazonaws.com/radiosilencestaging/stylesheets/reset.css?v=1" />
-    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/application.css?v=4" />
+    <link rel="stylesheet" href="http://s3.amazonaws.com/maintainradiosilence/stylesheets/reset.css?v=1" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/maintainradiosilence/stylesheets/application.css?v=5" />
     {block:Tag}
-    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/tag.css?v=0" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/maintainradiosilence/stylesheets/tag.css?v=1" />
     {/block:Tag}
     {block:Homepage}
-    <link rel="stylesheet" href="https://s3.amazonaws.com/radiosilencestaging/stylesheets/home.css?v=0" />
+    <link rel="stylesheet" href="https://s3.amazonaws.com/maintainradiosilence/stylesheets/home.css?v=0" />
     {/block:Homepage}
 
-    <script src="http://s3.amazonaws.com/radiosilencestaging/javascripts/libs/modernizr-1.7.min.js"></script>
+    <script src="http://s3.amazonaws.com/maintainradiosilence/javascripts/libs/modernizr-1.7.min.js"></script>
 
   </head>
 
@@ -44,7 +44,7 @@
             <a href="https://www.wepay.com/stores/632778" target="_blank" class="subscribe">Subscribe</a>
             <a href="/pages/contact" class="contact">Contact</a>
           </p>
-          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/radiosilencestaging/images/header/logo.png" alt="Radio Silence" /></a></h1>
+          <h1 class="logo"><a href="{SiteURL}"><img src="https://s3.amazonaws.com/maintainradiosilence/images/header/logo.png" alt="Radio Silence" /></a></h1>
         </div>
       </div>
 
@@ -52,8 +52,8 @@
 
         {block:NotSearchOrTag}
         <div id="sidebar">
-          <img src="https://s3.amazonaws.com/radiosilencestaging/images/sidebar/bg_top.jpg" class="bg_top" alt="." />
-          <img src="https://s3.amazonaws.com/radiosilencestaging/images/sidebar/bg_bottom.jpg" class="bg_bottom" alt="." />
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_top.jpg" class="bg_top" alt="." />
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/sidebar/bg_bottom.jpg" class="bg_bottom" alt="." />
           <h3 class="headline_subscriptions">Subscriptions &amp; Donations</h3>
           <p>
             To subscribe or purchase a single issue, please <a href="https://www.wepay.com/stores/radio_silence_general_store" target="_blank">visit our store at WePay</a>.
@@ -105,7 +105,7 @@
 
         {block:Homepage}
         <h4 class="headline">
-          <img src="https://s3.amazonaws.com/radiosilencestaging/images/pages/hero_launch.png" alt="Issue Number One" />
+          <img src="https://s3.amazonaws.com/maintainradiosilence/images/pages/hero_launch.png" alt="Issue Number One" />
         </h4>
         {/block:Homepage}
 
@@ -116,10 +116,13 @@
         {block:Tag}
         <div class="feed {Tag}">
           <h1 class="{Tag}">{Tag}</h1>
-          <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator-full.png" alt="---" /></p>
+          <p class="separator"><img src="https://s3.amazonaws.com/maintainradiosilence/images/separator-full.png" alt="---" /></p>
           <h4 class="cta writings">
             Selected excerpts from Issue Number 01 of Radio Silence...<br />
             <a href="https://www.wepay.com/stores/632778" target="_blank">Order your copy now.</a>
+          </h4>
+          <h4 class="cta sightsandsounds">
+            All films by <a href="http://vimeo.com/nickfarago" target="_blank">Nick Farago</a>
           </h4>
           {block:Posts}<div class="item">
             {block:Private}
@@ -148,6 +151,11 @@
           </footer>
           {/block:List}
 
+          <div class="sightsandsounds copyright">
+            <div class="border"></div>
+            This content is under legal copyright and may not be reproduced without permission.<br />
+            All rights reserved. © Radio Silence, 2012.
+          </div>
         </div>
         {/block:Tag}
 
@@ -155,7 +163,7 @@
           {block:ShowOrList}
           <div class="feed {TagsAsClasses}">
             {block:Homepage}
-            <p class="separator"><img src="https://s3.amazonaws.com/radiosilencestaging/images/separator.png" alt="---" /></p>
+            <p class="separator"><img src="https://s3.amazonaws.com/maintainradiosilence/images/separator.png" alt="---" /></p>
             <h2 class="headline_blog">Radio Silence Blog</h2>
             {/block:Homepage}
 
