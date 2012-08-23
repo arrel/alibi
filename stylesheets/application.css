@@ -58,7 +58,7 @@ a.img:hover { background-color: transparent; }
 #sidebar p.info { font-family: Georgia, serif; font-size: 13px; font-style: oblique; color: #545353; margin-top: 15px; line-height: 1.7em; }
 #sidebar h3 { text-indent: -9999px; background-repeat: no-repeat; width: 100%; height: 30px; margin-bottom: 8px; }
 #sidebar h3.headline_subscriptions { background-image: url('../images/sidebar/headline_subscriptions.png'); height: 42px; }
-#sidebar h3.headline_theteam { background-image: url('../images/sidebar/headline_theteam.png') }
+#sidebar h3.headline_thecrew { background-image: url('../images/sidebar/headline_thecrew.png') }
 #sidebar h5 { font-size: 17px; margin-bottom: 19px; }
 #sidebar h6 { font-weight: bold; }
 #sidebar .social a { display: block; font-family: Georgia, serif; font-size: 17px; padding-left: 50px; color: inherit; line-height: 33px; background-repeat: no-repeat; background-position: 0 5px; }
