@@ -3,8 +3,8 @@
 	display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline;
 	vertical-align: top; width: 300px; padding: 25px 20px 10px 0px;
 }
-.feed.writings .item:nth-child(3n+1) { padding: 25px 0 10px 0px; }
-.feed.sightsandsounds .item:nth-child(2n) { padding: 25px 0 10px 0px; }
+.feed.writings .item:nth-child(3n) { padding: 25px 0 10px 0px; }
+.feed.sightsandsounds .item:nth-child(2n+1) { padding: 25px 0 10px 0px; }
 .feed.sightsandsounds .item { width: 460px; }
 
 #main .feed .item h3 img { display: inline; }
