@@ -4,6 +4,9 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 a, a:active, a:visited { color: #ed1b24; text-decoration: none; }
 a:hover { color: #fff; background-color: #ed1b24; text-shadow: none; }
 a.img:hover { background-color: transparent; }
+a.hoverclear:hover { background-color: transparent; }
+.feed .item .noimagemargin img,
+#main .feed .item h4 .noimagemargin img { margin: 0; }
 
 /****************************************/
 /* HEADER
