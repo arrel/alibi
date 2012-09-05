@@ -128,3 +128,9 @@ input.button:hover { background-color:#777; }
 #main .feed .item p.cta { display: none; }
 #main .feed.writings .item.writings p.cta { text-indent: 0; display: block; margin: 0; font-weight: bold; }
 #main .feed.writings .item.writings p { text-align: justify; text-justify: newspaper; text-indent: 20px; margin-bottom: 0; }
+
+#main .feed.sightsandsounds .item .show { display: none; }
+#main .feed.sightsandsounds .item.sightsandsounds .show { display: block; }
+#main .feed.sightsandsounds .item.sightsandsounds .list { display: none; }
+#main .feed.sightsandsounds .item.sightsandsounds h3 { display: none; }
+#main .feed.sightsandsounds .item.sightsandsounds h5.timestamp { display: none; }
